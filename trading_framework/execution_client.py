@@ -1,4 +1,4 @@
-from typing import Protocol
+from typing import Protocol, List
 
 
 class ExecutionException(Exception):
@@ -14,7 +14,7 @@ class ExecutionClient(Protocol):
         :param amount: the amount to buy
         :return: None
         """
-        ...
+        raise ExecutionException("Buy execution failed.")
 
     def sell(self, product_id: str, amount: int):
         """
@@ -23,4 +23,4 @@ class ExecutionClient(Protocol):
         :param amount: the amount to sell
         :return: None
         """
-        ...
+        raise ExecutionException("Sell execution failed.")
