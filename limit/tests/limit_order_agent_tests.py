@@ -1,5 +1,3 @@
-# PyLimitOrders/limit/tests/limit_order_agent_tests.py
-
 import unittest
 from unittest.mock import MagicMock
 from limit.limit_order_agent import LimitOrderAgent
