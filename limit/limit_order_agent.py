@@ -1,5 +1,3 @@
-# PyLimitOrders/limit/limit_order_agent.py
-
 from trading_framework.execution_client import ExecutionClient
 from trading_framework.price_listener import PriceListener
 
